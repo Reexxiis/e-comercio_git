@@ -9,11 +9,14 @@ def listar_tecnicos(tecnicos):
 print(" ")
 
 
-"""def addTecnico(tecnicos):
+def add_tecnico():
     print("Ingresa los Datos del Nuevo Usuario: ")
     nombre = str(input("Ingresa el Nombre de Usuario: "))
     apellido = str(input(f"Introduce el Apellido de {nombre}: "))
-    num_local = int(input(f"Introduce el Numero de Local de {nombre, apellido}: "))
+    num_local = str(input(f"Introduce el Numero de Local de {nombre, apellido}: "))
     telefono = str(input("Introduce el Numero de Telefono: "))
     direccion = str(input("Introduce la Direccion: "))
-"""
+
+    tecnico = (nombre, apellido, num_local, telefono, direccion)
+    return tecnico
+

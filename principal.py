@@ -52,7 +52,14 @@ def ejecutarOpcion(opcion):
             print("Ocurrio un Error Inesperado.")
 
     elif opcion == 2:
-        print("")
+        tecnicos = funciones.add_tecnico()
+        try:
+            tecnicos = online.add_tecnico()
+            funciones.add_tecnico()
+            print("Registro Realizado con Exito.")
+        except:
+            print("Error 404")
+
 
     elif opcion == 3:
         print("")
