@@ -16,7 +16,7 @@ class connection():
             print("Error durante la Conexion: {0}".format(ex))
 
 
-    def lista_tecnicos(self):
+    def listar_tecnicos(self):
         if self.conexion.is_connected():
             try:
                 cursor = self.conexion.cursor()
